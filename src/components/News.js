@@ -30,7 +30,7 @@ const News=(props)=> {
     props.setProgress(100);
   }
   useEffect(() => {
-    document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
+    document.title = `${capitalizeFirstLetter(props.category)} - NewsApp`;
     updateNews();
   }, [])
   
