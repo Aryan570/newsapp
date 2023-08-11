@@ -30,7 +30,7 @@ const News=(props)=> {
     props.setProgress(100);
   }
   useEffect(() => {
-    document.title = `${capitalizeFirstLetter(props.category)} - NewsMonkey`;
+    document.title = `${capitalizeFirstLetter(props.category)} - NewsApp`;
     updateNews();
   }, [])
   
@@ -53,7 +53,7 @@ const News=(props)=> {
 
     return (
       <>
-        <h3 className="text-center" style={{ margin: '35px 0px', marginTop:'90px' }}>NewsMonkey - Top {capitalizeFirstLetter(props.category)} headlines</h3>
+        <h3 className="text-center" style={{ margin: '35px 0px', marginTop:'90px' }}>NewsApp - Top {capitalizeFirstLetter(props.category)} headlines</h3>
         {loading && <Spinner/>}
         <InfiniteScroll
           dataLength={articles.length}
